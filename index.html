@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="resources/css/ion.rangeSlider.css" rel="stylesheet" />
+</head>
+<body>
+<div style="width: 60%; margin:auto">
+    <div id="costRange"></div>
+</div>   
+<div class="demo__body">
+  <span id="demo_0" type="" name="" value="" class="irs-hidden-input" tabindex="-1" readonly=""></span>
+</body>
+</html>
+<script src="resources/js/ion.rangeSlider.min.js"></script>
+<script type="text/javascript">
+       $("#demo_0").ionRangeSlider({
+        skin: "big",
+        min: 0,
+        max: 100,
+        from: 5,
+        onStart: function (data) {
+            // fired then range slider is ready
+        },
+        onChange: function (data) {
+            // fired on every range slider update
+        },
+        onFinish: function (data) {
+            // fired on pointer release
+        },
+        onUpdate: function (data) {
+            // fired on changing slider with Update method
+        }
+    });
+</script>
+
+
+       
